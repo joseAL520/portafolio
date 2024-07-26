@@ -1,0 +1,68 @@
+.projects{
+    background-color: #f2f2f2f2;
+}
+
+
+.proyects_grids{
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "img1 img1  img2 img3 "
+    "img1 img1  img4 img5 ";
+    gap: 10px;
+}
+
+.proyects_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.proyects_img:nth-of-type(1){
+    grid-area: img1;
+}
+
+.proyects_img:nth-of-type(2){
+    grid-area: img2;
+}
+.proyects_img:nth-of-type(3){
+    grid-area: img3;
+}
+.proyects_img:nth-of-type(4){
+    grid-area: img4;
+}
+.proyects_img:nth-of-type(5){
+    grid-area: img5;
+}
+
+.proyect_hover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.685);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}
+.proyects_img:hover  .proyect_hover{
+    transform: translateX(0%);
+}
+.project_icon{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
