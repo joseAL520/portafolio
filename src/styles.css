@@ -2,10 +2,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+:root{
+    --backgroud: linear-gradient(135deg, #667eea7e 0%, #764ba298 100% );
+    --color-primary: #667eea;
+    --color-secundary: #764ba2;
+    --boton-padding:20px 40px;
+}
 
 *{
     margin: 0;
 }
 body{
     font-family: "Lato", sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0px;
+    max-width: 1200px;
+}
+
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
 }
