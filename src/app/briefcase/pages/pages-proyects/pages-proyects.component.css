@@ -1,5 +1,10 @@
 .projects{
     background-color: #f2f2f2f2;
+    view-timeline-name: --conv;
+    view-timeline-axis: block;
+    animation-timeline: --conv;
+    animation-name: shows;
+    animation-range: entry 10% cover 40%;
 }
 
 
@@ -98,3 +103,20 @@ p:nth-last-child(2){
     font-size: 15px;
     padding: 0px 5px;
 }
+
+
+
+
+@keyframes shows {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+  
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  
+  }
+  

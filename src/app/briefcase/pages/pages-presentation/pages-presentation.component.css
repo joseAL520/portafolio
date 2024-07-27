@@ -1,6 +1,12 @@
 .presentation {
     padding-top: 0;
     text-align: center;
+
+    view-timeline-name: --conv;
+    view-timeline-axis: block;
+    animation-timeline: --conv;
+    animation-name: shows;
+    animation-range: entry 6% cover 40%;
 }
 .presentation-img{
     width: 150px;
@@ -10,7 +16,6 @@
 
     /* para que no pierda resolucion */
     object-fit: cover;
-
 
     object-position: top;
 }
@@ -38,6 +43,12 @@
 
     align-items: center;
     justify-items: center;
+
+    view-timeline-name: --conv;
+    view-timeline-axis: block;
+    animation-timeline: --conv;
+    animation-name: shows;
+    animation-range: entry 4% cover 20%;
 }
 
 .about-img{
@@ -57,3 +68,19 @@
     line-height: 1.5;
     font-weight: 300;
 }
+
+
+
+@keyframes shows {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+  
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  
+  }
+  
