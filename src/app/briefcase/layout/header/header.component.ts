@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
 
-
+  title = '</> Jose Angel Alvarez Beltran';
   
 
 }
