@@ -120,9 +120,9 @@ img{
 
 .info-contact{
     display: flex;
-    background: rgb(255, 255, 255);
+    background: var(--color-tertiary);
     padding: var(--boton-padding);
-    color: var(--color-primary);
+    color: black;
     text-decoration: none;
     border-radius: 40px;
     align-items: center;
@@ -133,7 +133,7 @@ img{
 
 .info-contact:hover{
     color: rgb(0, 0, 0);
-    background: rgba(255, 255, 255, 0.849);
+    background: rgb(177, 97, 97);
 }
 
 .info-contact img{
