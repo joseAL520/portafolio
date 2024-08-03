@@ -77,15 +77,59 @@
    padding: 0px 5px;
 }
 
+.container__contact{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+textarea{
+    width: 180px;
+    resize: none;
+    padding: 10px;
+    height: 15px;
+}
 .presentation-cta{
     display: inline-block;
-    margin-top: 30px;
+    border: none;
     background: var(--color-tertiary);
     color: rgb(0, 0, 0);
     font-weight: 600;
     text-decoration: none;
-    padding: var(--boton-padding);
-    border-radius: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 5px 10px;
+    padding: 9px 20px;
+}
+
+.presentation-cta:active{
+    background: rgba(168, 1, 1, 0.726);
+}
+
+.text_copy{
+    position: absolute;
+    z-index: 1;
+    bottom: 47px;
+    right: -72px;
+    background: gray;
+    padding: 6px;
+    border-radius: 20px 20px 20px 0px;
+    font-size: 12px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+
+
+.text_copy.show{
+    visibility: visible;
+    opacity: 1;
 }
 
 /* about  */

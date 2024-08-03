@@ -12,9 +12,14 @@
                 <section  class="tags tags-participation"><span> Participante en <strong> IV CONGRESO INTERNACIONAL DE LA INGENIERÍA Y EL DISEÑO. TECNOLOGÍAS EMERGENTES Y SOSTENIBLES </strong>  </span> </section>
             </div>
        </section> 
-        
-        
-        <a href="" class="presentation-cta">Contactame ahora</a>
+        <strong style="font-size: 1.6rem; font-weight: 700; padding-top: 10px;"> Mi Gmail </strong>
+        <div class="container__contact">
+            <textarea #textarea disabled>{{defaultText}}</textarea>
+            <span class="text_copy" id="tooltip">Copiado exitoso</span>
+            <button class="presentation-cta" (click)="clipboard()">
+                <img src="assets/imgs/iconCopy.png" alt="icon" width="20px" height="20px">
+            </button>
+        </div>
     </section>
 
     <section class="about container" >
