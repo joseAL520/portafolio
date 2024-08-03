@@ -1,4 +1,8 @@
 .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     padding-top: 0;
     text-align: center;
 
@@ -17,17 +21,68 @@
     /* para que no pierda resolucion */
     object-fit: cover;
 
-    object-position: top;
+}
+.subtittle{
+    padding-bottom: 10px;
 }
 .presentation-info{
     width: 80%;
     margin: 0 auto;
+    line-height: 1.5;
+    padding-bottom: 20px;
 }
+
+.content-tags{
+    width: 60%;
+}
+
+.tags_skills{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.subtitle_skill{
+    font-weight: 600;
+}
+
+.container_tagas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tags{
+    display: inherit;
+    align-items: center;
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.tags-participation{
+    font-size: 10px;
+}
+
+.tags img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.tags span{
+   padding: 0px 5px;
+}
+
 .presentation-cta{
     display: inline-block;
     margin-top: 30px;
-    background: var(--color-primary);
-    color: white;
+    background: var(--color-tertiary);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
     text-decoration: none;
     padding: var(--boton-padding);
     border-radius: 40px;
@@ -64,12 +119,30 @@
 }
 
 .about-paragrapg{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.5;
     font-weight: 300;
 }
 
+.about-tile-paragrag{
+    margin: 5px;
+}
 
+.about-paragrapg span{
+    margin-left: 45px;
+}
+
+
+.btn-certificate{
+    display: inline-block;
+    background: var(--color-tertiary);
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 70%;
+}
 
 @keyframes shows {
     from {
@@ -84,3 +157,41 @@
   
   }
   
+@media (max-width:640px) {
+    .presentation-info{
+     
+        padding-bottom: 0;
+
+    }
+    .presentation-img{
+        margin-top: 22px;
+    }
+
+    .presentation-cta{
+        margin-top: 15px;
+    }
+
+    .about{
+        animation-range: entry 0% cover 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-img{
+        display: none;
+    }
+    .about-paragrapg span{
+        margin-left: 0;
+    }
+
+    .btn-certificate{
+        margin-top: 15px;
+        padding: 7px;
+    }
+
+    .about-text0 {
+        display: none;
+    }
+
+}

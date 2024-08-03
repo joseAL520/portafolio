@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root{
-    --backgroud: linear-gradient(135deg, #667eea7e 0%, #764ba298 100% );
-    --color-primary: #667eea;
+    --backgroud: linear-gradient(135deg, #0000006e 10%, #a24b4b98 90% );
+    --color-primary: #5f7cfd;
     --color-secundary: #764ba2;
+    --color-tertiary: #fd7474bf;
     --boton-padding:20px 40px;
 }
 
@@ -25,7 +26,19 @@ body{
 }
 
 .subtitle{
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     font-size: 2.5rem;
     margin-bottom: 35px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media (max-width:650px) {
+    :root{
+        --backgroud: linear-gradient(0deg, #0000006e 0%, #a24b4b98 100% );
+    }
+
+    .container{
+        padding: 20px 0px;
+    }
 }
