@@ -10,7 +10,6 @@
 
 .proyects_grids{
     display: grid;
-    height: 550px;
     grid-template-areas: 
     "img1 img1  img2 img3 "
     "img1 img1  img4 img5 ";
@@ -65,7 +64,7 @@ img{
     justify-content: center;
     transform: translateX(100%);
     transition: transform .5s ease-in-out;
-    backdrop-filter: blur(0.4rem);
+    backdrop-filter: blur(1rem);
 }
 .proyects_img:hover  .proyect_hover{
     transform: translateX(0%);
@@ -75,15 +74,28 @@ img{
     font-size: 30px;
 }
 
+.project_icon img{
+    width: 25px;
+    height: 25px;;
+    margin: 0px 10px;
+}
+
+.project_icon a{
+    margin: 0px 10px;
+}
+
+.project_icon a img{
+    width: 30px;
+    height:30px ;
+}
+
 .icons-imgs{
     width: 30px;
     height: 30px;
 }
 
 p{
-    margin-bottom: 20px;
-    line-height: 1.5;
-    font-weight: 700;
+    font-size: 15px;
     text-align: start;
     padding: 15px 5px;
    
@@ -98,11 +110,6 @@ p{
 }
 
 /* maximo de 33 palabras las descripciones */
-
-p:nth-last-child(2){
-    font-size: 15px;
-    padding: 0px 5px;
-}
 
 
 
@@ -135,7 +142,8 @@ p:nth-last-child(2){
 
     p{
         font-weight: 500;
-        line-height: 1.2;
+        line-height: 1;
+        padding: 5px;
     }
   
   } 
