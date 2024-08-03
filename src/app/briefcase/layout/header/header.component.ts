@@ -12,5 +12,8 @@ export class HeaderComponent {
 
   title = '</> Jose Angel Alvarez Beltran';
   
+  openCVpdf(url:string){
+    window.open(url, '_blank');
+  }
 
 }
