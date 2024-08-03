@@ -119,4 +119,23 @@ p:nth-last-child(2){
     }
   
   }
+
   
+  @media (max-width:650px){
+
+    .projects{
+        animation: none;
+    }
+    
+    .proyects_grids{
+        display: flex;
+        flex-direction: column;
+        height: 1250px;
+    }
+
+    p{
+        font-weight: 500;
+        line-height: 1.2;
+    }
+  
+  } 
