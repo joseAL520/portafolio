@@ -32,3 +32,9 @@ body{
     text-decoration: underline;
     font-weight: 600;
 }
+
+@media (max-width:650px) {
+    :root{
+        --backgroud: linear-gradient(0deg, #0000006e 0%, #a24b4b98 100% );
+    }
+}
