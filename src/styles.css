@@ -37,4 +37,8 @@ body{
     :root{
         --backgroud: linear-gradient(0deg, #0000006e 0%, #a24b4b98 100% );
     }
+
+    .container{
+        padding: 20px 0px;
+    }
 }

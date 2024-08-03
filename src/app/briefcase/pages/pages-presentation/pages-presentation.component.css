@@ -157,3 +157,41 @@
   
   }
   
+@media (max-width:640px) {
+    .presentation-info{
+     
+        padding-bottom: 0;
+
+    }
+    .presentation-img{
+        margin-top: 22px;
+    }
+
+    .presentation-cta{
+        margin-top: 15px;
+    }
+
+    .about{
+        animation-range: entry 0% cover 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-img{
+        display: none;
+    }
+    .about-paragrapg span{
+        margin-left: 0;
+    }
+
+    .btn-certificate{
+        margin-top: 15px;
+        padding: 7px;
+    }
+
+    .about-text0 {
+        display: none;
+    }
+
+}
